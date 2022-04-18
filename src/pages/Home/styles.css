@@ -1,0 +1,52 @@
+/*HOME PARENT*/
+.homeSection{
+    width: 80vw;
+}
+/*PRESENTATION*/
+.sectionPresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    min-height: 100vh;
+    width: 100%;
+}
+.sectionPresentation h1{
+    font-family: Gotham-Bold;
+    margin: 0.2em 0;
+}
+.sectionPresentation h1:nth-child(2){
+    font-size: 6vw;
+}
+.sectionPresentation h1:nth-child(3){
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+/*ABOUT ME*/
+.sectionAboutMe{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sectionAboutMe h1{
+    font-family: Gotham-Bold;
+    font-size: 2em;
+}
+.sectionAboutMe p{
+    font-size: 0.7em;
+}
+/*SKILLS*/
+.sectionSkills h1{
+    font-family: Gotham-Bold;
+}
+.divSkills{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1vh;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+}
