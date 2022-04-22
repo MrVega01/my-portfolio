@@ -1,5 +1,7 @@
-import SkillsProfile from '../../components/SkillsProfile';
 import './styles.css';
+import SkillsProfile from '../../components/SkillsProfile';
+import InfoBar from '../../components/InfoBar';
+import RepositoriesList from '../../components/RepositoriesList';
 //IMPORTING PHOTOS
 import reactPhoto from '../../img/react.svg';
 import nodejsPhoto from '../../img/nodejs.svg';
@@ -11,8 +13,6 @@ import mongodbPhoto from '../../img/mongodb.svg';
 import mysqlPhoto from '../../img/mysql.svg';
 import phpPhoto from '../../img/php.svg';
 import gitPhoto from '../../img/git.svg';
-
-
 
 export default function Home(){
     return(
@@ -84,16 +84,26 @@ experiences. Now improving my backend skills.
                         percent={'50%'}
                     />
                 </div>
-                <h1>Passive skills</h1>
-                <div>
-                      
-                </div>
             </section>
             <section className='sectionExperience'>
-
+                <h1>Where I've work?</h1>
+                <InfoBar
+                    data={[
+                        {
+                            company: 'Assett+',
+                            occupation: 'FullStack Javascript Developer',
+                            time: 'March 2022 - Now',
+                            description: `My first work, the knowledge acquired was huge, creating websites with 
+                            ReactJS, adding personalized functionalities to sites with Javascript and Git, 
+                            much Git.`
+                        }
+                    ]}
+                />
             </section>
             <section className='sectionProjects'>
-
+                <h1>My projects!</h1>
+                <h2>See all my repositories</h2>
+                <RepositoriesList />
             </section>
             <section className='sectionContact'>
 

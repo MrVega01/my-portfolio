@@ -25,10 +25,10 @@
 }
 /*ABOUT ME*/
 .sectionAboutMe{
-    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh;
 }
 .sectionAboutMe h1{
     font-family: Gotham-Bold;
@@ -40,6 +40,7 @@
 /*SKILLS*/
 .sectionSkills h1{
     font-family: Gotham-Bold;
+    font-size: 2em;
 }
 .divSkills{
     background: rgba(255, 255, 255, 0.1);
@@ -48,5 +49,18 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(15px);
+}
+/*EXPERIENCE*/
+.sectionExperience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20vh 0;
+}
+.sectionExperience h1{
+    font-family: Gotham-Bold;
+    font-size: 2em;
+    margin-bottom: 2em;
 }
