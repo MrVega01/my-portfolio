@@ -80,7 +80,6 @@ export default function WorldAnimation(){
     }});
 
     const startCanvas = ()=>{
-        console.log(startCanvas)
         worldDiv.current.appendChild(renderer.domElement);
     }
     window.addEventListener('load', startCanvas);

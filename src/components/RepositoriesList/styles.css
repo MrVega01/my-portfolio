@@ -23,13 +23,15 @@
     align-items: center;
     justify-content: center;
 }
-.listElementRepo div img{
+.listElementRepo div svg{
     width: 1em;
+    height: auto;
     padding: 0.3em;
+    fill: rgb(248, 147, 29);
     transition: 0.3s all;
 }
-.listElementRepo div img:hover{
-    filter: contrast(1000%);
+.listElementRepo div svg:hover{
+    fill: #fff;
 }
 .listElementRepo sub{
     font-size: 0.4em;
@@ -40,5 +42,10 @@
 @media (max-width: 900px){
     .repositoriesList{
         grid-template-columns: repeat(2, 1fr);
+    } 
+}
+@media (max-width: 560px){
+    .repositoriesList{
+        grid-template-columns: repeat(1, 1fr);
     } 
 }
