@@ -1,5 +1,5 @@
 import './styles.css';
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { gsap } from 'gsap'
 import * as THREE from 'three';
 
@@ -79,9 +79,9 @@ export default function WorldAnimation(){
     renderingParent.rotation.set(animProps.xRot,animProps.yRot,0);
     }});
 
-    const startCanvas = ()=>{
+    useEffect(()=>{
         worldDiv.current.appendChild(renderer.domElement);
-    }
-    window.addEventListener('load', startCanvas);
+    },[renderer.domElement]);
+
     return <div className="worldCanvas" ref={worldDiv}></div>
 }
