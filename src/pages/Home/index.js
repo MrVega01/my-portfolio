@@ -13,6 +13,7 @@ import mongodbPhoto from '../../img/mongodb.svg';
 import mysqlPhoto from '../../img/mysql.svg';
 import phpPhoto from '../../img/php.svg';
 import gitPhoto from '../../img/git.svg';
+import expressPhoto from '../../img/expressjs.png';
 
 export default function Home(){
     return(
@@ -37,17 +38,27 @@ experiences. Now improving my backend skills.
                     <SkillsProfile
                         text={'React'}
                         photo={reactPhoto}
-                        percent={'50%'}
+                        percent={'60%'}
                     />
                     <SkillsProfile
                         text={'Node.js'}
                         photo={nodejsPhoto}
-                        percent={'20%'}
+                        percent={'50%'}
+                    />
+                    <SkillsProfile
+                        text={'Express.js'}
+                        photo={expressPhoto}
+                        percent={'50%'}
                     />
                     <SkillsProfile
                         text={'Javascript'}
                         photo={jsPhoto}
-                        percent={'70%'}
+                        percent={'75%'}
+                    />
+                    <SkillsProfile
+                        text={'MongoDB'}
+                        photo={mongodbPhoto}
+                        percent={'45%'}
                     />
                     <SkillsProfile
                         text={'HTML5'}
@@ -57,17 +68,12 @@ experiences. Now improving my backend skills.
                     <SkillsProfile
                         text={'CSS3'}
                         photo={cssPhoto}
-                        percent={'75%'}
+                        percent={'80%'}
                     />
                     <SkillsProfile
                         text={'Bootstrap'}
                         photo={bootstrapPhoto}
-                        percent={'80%'}
-                    />
-                    <SkillsProfile
-                        text={'MongoDB'}
-                        photo={mongodbPhoto}
-                        percent={'10%'}
+                        percent={'60%'}
                     />
                     <SkillsProfile
                         text={'MySQL'}
@@ -82,7 +88,7 @@ experiences. Now improving my backend skills.
                     <SkillsProfile
                         text={'Git'}
                         photo={gitPhoto}
-                        percent={'50%'}
+                        percent={'80%'}
                     />
                 </div>
             </section>
